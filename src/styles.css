@@ -49,7 +49,7 @@ p {
 
 #banner .back-image {
   position: absolute;
-  background-image: url("/docs/main.jpg");
+  background-image: url("https://github.com/charliegucci/wilson_esmundo_portfolio/blob/master/docs/main.jpg?raw=true");
   background-color: #393e46;
   background-position: center;
   background-repeat: no-repeat;
