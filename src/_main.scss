@@ -10,11 +10,12 @@ body {
     font-size: 1.1em;
     line-height: 1.5;
     text-align: center;
+    box-sizing: border-box;
 }
 
 img {
     display: block;
-    width: 60%;
+    width: 35%;
     height: auto;
     margin: auto;
     padding: 1.5em;

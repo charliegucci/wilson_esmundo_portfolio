@@ -12,11 +12,13 @@ body {
   font-size: 1.1em;
   line-height: 1.5;
   text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 img {
   display: block;
-  width: 60%;
+  width: 35%;
   height: auto;
   margin: auto;
   padding: 1.5em;
@@ -119,7 +121,7 @@ p {
 }
 
 #skills-section {
-  padding: 1em;
+  padding: 2em 2em 6em;
 }
 
 #skills-section ul {
@@ -150,18 +152,41 @@ p {
   font-size: 1.5em;
 }
 
-#third-section {
-  background: #fff;
+#project-section {
+  background: #fdfdfd;
   color: #393e46;
   padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", sans-serif;
 }
 
-#fourth-section .box {
+.terminal,
+.portfolio {
+  width: 30%;
+}
+
+#contact-section {
+  font-family: "Montserrat", sans-serif;
+}
+
+#contact-section .box {
   padding: 2em;
   color: #fff;
 }
 
-#fourth-section .box:first-child {
+#contact-section .box:first-child {
   background: #393e46;
 }
 
@@ -170,6 +195,7 @@ p {
   background: #393e46;
   color: #fff;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 #main-footer a {

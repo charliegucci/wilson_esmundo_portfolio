@@ -1,8 +1,12 @@
-#fourth-section .box {
+#contact-section {
+    font-family: $primary-font;
+}
+
+#contact-section .box {
     padding: 2em;
     color: #fff;
 }
 
-#fourth-section .box:first-child {
+#contact-section .box:first-child {
     background: #393e46;
 }
