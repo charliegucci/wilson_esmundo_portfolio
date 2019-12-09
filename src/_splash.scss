@@ -1,18 +1,5 @@
-:root {
-    --primary-color: rgba(13, 110, 139, 0.55);
-    --overlay-color: rgba(24, 39, 51, 0.85);
-    --menu-speed: 0.75s;
-}
-
-.container {
-    max-width: 960px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 3em;
-}
-
 .showcase {
-    background-color: var(--primary-color);
+    background-color: $hamburger-primary-color;
     color: #fff;
     height: 100vh;
     position: relative;
@@ -41,10 +28,14 @@
 
 .showcase h1 {
     font-size: 4rem;
+    font-family: $primary-font;
+    color: #FDFDFD;
 }
 
-.showcase p {
+.showcase h2 {
     font-size: 1.3rem;
+    font-family: $secondary-font;
+    padding-bottom: 2em;
 }
 
 .btn {
@@ -54,7 +45,8 @@
     text-decoration: none;
     padding: 1em 2em;
     border: 1px solid #393e46;
-    margin: 0.5em 0;
+    margin: 1em 0;
+    font-family: $secondary-font;
 
 }
 

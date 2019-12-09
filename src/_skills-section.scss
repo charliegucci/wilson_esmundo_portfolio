@@ -1,20 +1,33 @@
-#second-section {
-    padding: 2em 1em 1em;
+#skills-section {
+    padding: 1em;
 
 }
 
-#second-section ul {
+#skills-section ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#second-section li {
+#skills-section li {
     margin: 1em;
-    background: #fff;
+    background: #FDFDFD;
     color: #393e46;
+    font-family: $primary-font;
 }
 
 .card-content {
     padding: 1em;
+}
+
+#skills-section h2 {
+    font-family: $primary-font;
+    font-size: 2.5em;
+
+}
+
+.card h3 {
+    font-family: $primary-font;
+    font-weight: bolder;
+    font-size: 1.5em;
 }

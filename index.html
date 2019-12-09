@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wilson Esmundo</title>
     <link rel="stylesheet" href="src/styles.css">
+
+    <!-- Link to Fontawesome icons -->
+    <script src="https://kit.fontawesome.com/ee536397e6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,10 +24,10 @@
                 <div>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Skill</a></li>
-                        <li><a href="#">Interest</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#intro-section">About</a></li>
+                        <li><a href="#skills-section">Skill</a></li>
+                        <li><a href="#third-section">Interest</a></li>
+                        <li><a href="#fourth-section">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -32,9 +35,9 @@
     </div>
     <header class="showcase">
         <div class="container showcase-inner">
-            <h1 class="myname">I'm Wilson.</h1>
+            <h1 id="myname">I'm Wilson.</h1>
             <h2>a full stack developer.</h2>
-            <a href="#second-section" class="btn">Read More</a>
+            <a href="#intro-section" class="btn">Learn More</a>
         </div>
 
     </header>
@@ -42,26 +45,32 @@
     <!-- End of menu bar -->
 
     <!-- This is the main area -->
+
     <main id="main">
 
-        <!-- This is the first-section -->
+        <!-- This is the intro-section -->
 
-        <section id="first-section" class="grid">
+        <section id="intro-section" class="grid">
             <div class="content-wrap">
-                <h2 class="content-title">Intro</h2>
-                <div class="content-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, rem quam hic deleniti
-                        voluptates similique delectus maxime accusantium sed magni tempora a commodi repellendus.
-                        Laboriosam explicabo exercitationem quas, facere recusandae nostrum! Sint aspernatur eveniet
-                        placeat officiis magnam, amet ex pariatur?</p>
+                <h2 class="content-title"></h2>
+                <div class="profile">
+                    <div>
+                        <img class="profile-pic" src="docs/prof.jpeg" alt="Profile">
+                    </div>
                 </div>
-
+                <div class="content-text">
+                    <p>"Hello, my name is Wilson. I'm currently studying Diploma in Information Technology at Coder
+                        Academy. I have a diverse set of skills ranging from design, HTML, CSS, Bootstrap and
+                        Javascript all the way to object programming language such as Ruby. With every line of code,
+                        I want to make the web a beautiful place. Thank you."</p>
+                </div>
             </div>
+
         </section>
 
         <!-- This is 2nd section -->
 
-        <section id="second-section" class="grid">
+        <section id="skills-section" class="grid">
             <h2 class="content-title">Skills</h2>
             <ul>
                 <li>
@@ -69,8 +78,8 @@
                         <img src="docs/ruby.png" alt="Ruby">
                         <div class="card-content">
                             <h3 class="card-title">RUBY</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni libero possimus
-                                veniam maiores iusto, obcaecati corrupti maxime! Tempora, ratione dolores.</p>
+                            <p>A dynamic, open source programming language with a focus on simplicity and productivity.
+                                It has an elegant syntax that is natural to read and easy to write.</p>
                         </div>
                     </div>
                 </li>
@@ -79,8 +88,8 @@
                         <img src="docs/html-5.png" alt="HTML">
                         <div class="card-content">
                             <h3 class="card-title">HTML5</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni libero possimus
-                                veniam maiores iusto, obcaecati corrupti maxime! Tempora, ratione dolores.</p>
+                            <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed
+                                to be displayed in a web browser.</p>
                         </div>
                     </div>
                 </li>
@@ -89,8 +98,8 @@
                         <img src="docs/css.png" alt="CSS">
                         <div class="card-content">
                             <h3 class="card-title">CSS</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni libero possimus
-                                veniam maiores iusto, obcaecati corrupti maxime! Tempora, ratione dolores.</p>
+                            <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the
+                                presentation of a document written in a markup language like HTML.</p>
                         </div>
                     </div>
                 </li>
@@ -131,3 +140,11 @@
 </body>
 
 </html>
+
+<!-- <div class="social-icons"></div>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github-square"></i></a>
+                        <a href="#"><i class="fas fa-envelope-square"></i></a>
+                    </div> -->
