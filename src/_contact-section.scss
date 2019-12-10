@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+#contact-section .contact-me {
+    margin-top: 2rem;
+}
+
 .contact {
     background: url(../docs/contactbg.jpeg) no-repeat;
     background-size: cover;
@@ -40,17 +44,4 @@
     font-size: 18px;
     margin-top: 6px;
     color: #fdfdfd;
-}
-
-.contact .btn {
-    display: inline-block;
-    background: none;
-    padding: 14px;
-    color: #fff;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin-top: 8px;
-    width: 100%;
-
-
 }

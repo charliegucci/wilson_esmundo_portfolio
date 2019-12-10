@@ -86,19 +86,31 @@ p {
 
 .btn {
   display: inline-block;
-  background: #393e46;
-  color: #fff;
+  border-radius: 2rem;
+  color: #eee;
   text-decoration: none;
   padding: 1em 2em;
-  border: 1px solid #393e46;
-  margin: 1em 0;
-  font-family: "Merriweather", serif;
+  margin: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: .8rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #445ae3;
 }
 
 .btn:hover {
-  background: #eaeaea;
-  color: #393e46;
-  opacity: .7;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #intro-section {
@@ -117,11 +129,20 @@ p {
   text-align: justify;
   padding: 1em;
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
+  font-style: italic;
 }
 
 #skills-section {
   padding: 2em 2em 6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #skills-section ul {
@@ -135,6 +156,10 @@ p {
   background: #FDFDFD;
   color: #393e46;
   font-family: "Montserrat", sans-serif;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .card-content {
@@ -150,6 +175,15 @@ p {
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
   font-size: 1.5em;
+}
+
+.content-title {
+  padding-top: 4rem;
+}
+
+#skills-section li:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 #project-section {
@@ -177,9 +211,18 @@ p {
   width: 30%;
 }
 
+#project-section h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+}
+
 .contact-me {
   margin: 0;
   padding: 0;
+}
+
+#contact-section .contact-me {
+  margin-top: 2rem;
 }
 
 .contact {
@@ -223,21 +266,10 @@ p {
   color: #fdfdfd;
 }
 
-.contact .btn {
-  display: inline-block;
-  background: none;
-  padding: 14px;
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin-top: 8px;
-  width: 100%;
-}
-
 #main-footer {
   padding: 2em;
-  background: #393e46;
-  color: #fff;
+  background: #fdfdfd;
+  color: black;
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
@@ -245,6 +277,50 @@ p {
 #main-footer a {
   color: aqua;
   text-decoration: none;
+  padding: 1rem;
+}
+
+.social-icons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.fa-facebook-square {
+  color: #3b5999;
+  font-size: 1.5rem;
+}
+
+.fa-twitter-square {
+  color: #55acee;
+  font-size: 1.5rem;
+}
+
+.fa-linkedin {
+  color: #0072b1;
+  font-size: 1.5rem;
+}
+
+.fa-github-square {
+  color: #211F1F;
+  font-size: 1.5rem;
+}
+
+.fa-envelope-square {
+  color: #0072c6;
+  font-size: 1.5rem;
+}
+
+.fa-facebook-square:hover,
+.fa-twitter-square:hover,
+.fa-linkedin:hover,
+.fa-github-square:hover,
+.fa-envelope-square:hover {
+  color: #45e19f;
 }
 
 @media (min-width: 700px) {
@@ -549,6 +625,15 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 5px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.card-wrapper .card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .card .card-img {
@@ -558,6 +643,5 @@ p {
 
 .profile-image {
   border-radius: 50%;
-  z-index: 2;
 }
 /*# sourceMappingURL=styles.css.map */
