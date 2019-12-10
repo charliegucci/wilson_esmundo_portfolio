@@ -1,0 +1,46 @@
+#contact-section .box:nth-child(2) {
+    margin: 0;
+    padding: 2rem;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: $primary-font;
+    color: black;
+
+}
+
+.card .about {
+    text-align: justify;
+    padding: 1.2em;
+
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-wrapper .card {
+
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.card .card-img {
+
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 24% 97%, 50% 75%, 0% 75%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 24% 97%, 50% 75%, 0% 75%);
+
+}
+
+.profile-image {
+    border-radius: 50%;
+    z-index: 2;
+
+
+}

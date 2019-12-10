@@ -144,3 +144,31 @@
     text-decoration: none;
     transition: color 0.4s ease;
 }
+
+// Menu ANimation
+
+@keyframes line-animation {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(6px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.menu-wrap .toggler:not(:checked):hover+.hamburger-menu>div::before {
+    animation: line-animation 0.3s linear 0.1s;
+}
+
+.menu-wrap .toggler:not(:checked):hover+.hamburger-menu>div {
+    animation: line-animation 0.6s linear 0.06s;
+}
+
+.menu-wrap .toggler:not(:checked):hover+.hamburger-menu>div::after {
+    animation: line-animation 0.3s linear 0.3s;
+}

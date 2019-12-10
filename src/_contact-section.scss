@@ -1,25 +1,10 @@
-// #contact-section {
-//     font-family: $primary-font;
-// }
-
-// #contact-section .box {
-//     padding: 2em;
-//     color: #fff;
-// }
-
-// #contact-section .box:first-child {
-//     background: #393e46;
-// }
-
-
-
 .contact-me {
     margin: 0;
     padding: 0;
 }
 
 .contact {
-    background: url(../docs/contactbg.jpeg);
+    background: url(../docs/contactbg.jpeg) no-repeat;
     background-size: cover;
     box-sizing: border-box;
     text-align: center;
