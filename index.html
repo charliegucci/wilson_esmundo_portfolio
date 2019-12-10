@@ -2,152 +2,197 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Wilson Esmundo</title>
-    <link rel="stylesheet" href="src/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Wilson Esmundo</title>
+  <link rel="stylesheet" href="src/styles.css" />
 
-    <!-- Link to Fontawesome icons -->
-    <script src="https://kit.fontawesome.com/ee536397e6.js" crossorigin="anonymous"></script>
+  <!-- Link to Fontawesome icons -->
+  <script src="https://kit.fontawesome.com/ee536397e6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- This is the menu-bar -->
-    <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger-menu">
-            <div></div>
-        </div>
-        <div class="menu">
-            <div>
-                <div>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#intro-section">About</a></li>
-                        <li><a href="#skills-section">Skill</a></li>
-                        <li><a href="#project-section">Project</a></li>
-                        <li><a href="#fourth-section">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+  <!-- This is the menu-bar -->
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler" />
+    <div class="hamburger-menu">
+      <div></div>
     </div>
-    <header class="showcase">
-        <div class="container showcase-inner">
-            <h1 id="myname">I'm Wilson.</h1>
-            <h2>a full stack developer.</h2>
-            <a href="#intro-section" class="btn">Learn More</a>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#intro-section">About</a></li>
+            <li><a href="#skills-section">Skill</a></li>
+            <li><a href="#project-section">Project</a></li>
+            <li><a href="#fourth-section">Contact</a></li>
+          </ul>
         </div>
+      </div>
+    </div>
+  </div>
+  <header class="showcase">
+    <div class="container showcase-inner">
+      <h1 id="myname">I'm Wilson.</h1>
+      <h2>a full stack developer.</h2>
+      <a href="#intro-section" class="btn">Learn More</a>
+    </div>
+  </header>
 
-    </header>
+  <!-- End of menu bar -->
 
-    <!-- End of menu bar -->
+  <!-- This is the main area -->
 
-    <!-- This is the main area -->
+  <main id="main">
+    <!-- This is the intro-section -->
 
-    <main id="main">
+    <section id="intro-section" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title"></h2>
+        <div class="profile">
+          <div>
+            <img class="profile-pic" src="docs/prof.jpeg" alt="Profile" />
+          </div>
+        </div>
+        <div class="content-text">
+          <p>
+            "Hello, my name is Wilson. I'm currently studying Diploma in
+            Information Technology at Coder Academy. I have a diverse set of
+            skills ranging from design, HTML, CSS, Bootstrap and Javascript
+            all the way to object programming language such as Ruby. With
+            every line of code, I want to make the web a beautiful place.
+            Thank you."
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <!-- This is the intro-section -->
+    <!-- This is Skills section -->
 
-        <section id="intro-section" class="grid">
-            <div class="content-wrap">
-                <h2 class="content-title"></h2>
-                <div class="profile">
-                    <div>
-                        <img class="profile-pic" src="docs/prof.jpeg" alt="Profile">
-                    </div>
-                </div>
-                <div class="content-text">
-                    <p>"Hello, my name is Wilson. I'm currently studying Diploma in Information Technology at Coder
-                        Academy. I have a diverse set of skills ranging from design, HTML, CSS, Bootstrap and
-                        Javascript all the way to object programming language such as Ruby. With every line of code,
-                        I want to make the web a beautiful place. Thank you."</p>
-                </div>
+    <section id="skills-section" class="grid">
+      <h2 class="content-title">Skills</h2>
+      <ul>
+        <li>
+          <div class="card">
+            <img src="docs/ruby.png" alt="Ruby" />
+            <div class="card-content">
+              <h3 class="card-title">RUBY</h3>
+              <p>
+                A dynamic, open source programming language with a focus on
+                simplicity and productivity. It has an elegant syntax that is
+                natural to read and easy to write.
+              </p>
             </div>
-
-        </section>
-
-        <!-- This is Skills section -->
-
-        <section id="skills-section" class="grid">
-            <h2 class="content-title">Skills</h2>
-            <ul>
-                <li>
-                    <div class="card">
-                        <img src="docs/ruby.png" alt="Ruby">
-                        <div class="card-content">
-                            <h3 class="card-title">RUBY</h3>
-                            <p>A dynamic, open source programming language with a focus on simplicity and productivity.
-                                It has an elegant syntax that is natural to read and easy to write.</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <img src="docs/html-5.png" alt="HTML">
-                        <div class="card-content">
-                            <h3 class="card-title">HTML5</h3>
-                            <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed
-                                to be displayed in a web browser.</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <img src="docs/css.png" alt="CSS">
-                        <div class="card-content">
-                            <h3 class="card-title">CSS</h3>
-                            <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the
-                                presentation of a document written in a markup language like HTML.</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-
-        <!-- This is the Project Section -->
-        <section id="project-section" class="grid">
-            <div class="content-wrap">
-                <h2 class="content-title">Ruby Terminal Application</h2>
-                <img class="terminal" src="./docs/terminal.png" alt="terminal">
-                <p><a href="https://github.com/charliegucci/T1A2" target="_blank">Bird Database</a> for Terminal
-                    Application
-                    using Ruby Language</p>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="docs/html-5.png" alt="HTML" />
+            <div class="card-content">
+              <h3 class="card-title">HTML5</h3>
+              <p>
+                Hypertext Markup Language (HTML) is the standard markup
+                language for documents designed to be displayed in a web
+                browser.
+              </p>
             </div>
-            <div class="content-wrap">
-                <h2 class="content-title">Portfolio Website</h2>
-                <img class="portfolio" src="./docs/website.png" alt="portfolio">
-                <p><a href="https://charliegucci.github.io/wilson_esmundo_portfolio/" target="_blank">Portfolio</a>
-                    website using HTML and
-                    CSS
-                </p>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="docs/css.png" alt="CSS" />
+            <div class="card-content">
+              <h3 class="card-title">CSS</h3>
+              <p>
+                Cascading Style Sheets (CSS) is a style sheet language used
+                for describing the presentation of a document written in a
+                markup language like HTML.
+              </p>
             </div>
-        </section>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-        <!-- This is the 4th section -->
+    <!-- This is the Project Section -->
+    <section id="project-section" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title">Ruby Terminal Application</h2>
+        <img class="terminal" src="./docs/terminal.png" alt="terminal" />
+        <p>
+          <a href="https://github.com/charliegucci/T1A2" target="_blank">Bird Database</a>
+          for Terminal Application using Ruby Language
+        </p>
+      </div>
+      <div class="content-wrap">
+        <h2 class="content-title">Portfolio Website</h2>
+        <img class="portfolio" src="./docs/website.png" alt="portfolio" />
+        <p>
+          <a href="https://charliegucci.github.io/wilson_esmundo_portfolio/" target="_blank">Portfolio</a>
+          website using HTML and CSS
+        </p>
+      </div>
+    </section>
 
-        <section id="contact-section" class="grid">
-            <div class="box">
-                <h2 class="content-title">Contact me</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos quasi magnam animi, corrupti
-                    laboriosam sit minima perspiciatis? Assumenda, molestiae quod.</p>
-                <p>email@email.com</p>
+    <!-- This is the 4th section -->
+
+    <section id="contact-section" class="grid">
+      <div class="box">
+        <form class="contact-me">
+          <div class="contact">
+            <h2>Contact Me</h2>
+            <div class="txt">
+              <label>Full Name:</label>
+              <input type="text" name="" value="" placeholder="Enter Your Name" required=""></div>
+
+
+            <div class="txt">
+              <label>Email:</label>
+              <input type="email" name="" value="" placeholder="Enter Your Email" required=""></div>
+
+
+            <div class="txt">
+              <label>Phone:</label>
+              <input type="text" name="" value="" placeholder="Enter Your Number" required=""></div>
+
+
+            <div class="txt">
+              <label>Message:</label>
+              <textarea></textarea>
             </div>
-            <div class="box">
-                <h2 class="content-title">About</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea et maxime ab rem! Deleniti eaque
-                    voluptatem est sequi repellat. Dicta aperiam officia quae quia labore similique cumque magni
-                    ut ratione.</p>
-            </div>
-        </section>
-    </main>
-    <!-- This is the footer  -->
-    <footer id="main-footer" class="grid">
-        <div>Linkedin</div>
-        <div>Github <a href="https://github.com/charliegucci" target="_blank">Click Here</a> </div>
-    </footer>
+            <button class="btn">Send</button>
+
+          </div>
+        </form>
+        <!-- <h2
+                class="content-title">Contact me</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos quasi
+                magnam animi, corrupti laboriosam sit minima perspiciatis?
+                Assumenda, molestiae quod.
+              </p>
+              <p>email@email.com</p> -->
+      </div>
+      <div class="box">
+        <h2 class="content-title">About</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea et
+          maxime ab rem! Deleniti eaque voluptatem est sequi repellat. Dicta
+          aperiam officia quae quia labore similique cumque magni ut ratione.
+        </p>
+      </div>
+    </section>
+  </main>
+  <!-- This is the footer  -->
+  <footer id="main-footer" class="grid">
+    <div>Linkedin</div>
+    <div>
+      Github
+      <a href="https://github.com/charliegucci" target="_blank">Click Here</a>
+    </div>
+  </footer>
 </body>
 
 </html>
