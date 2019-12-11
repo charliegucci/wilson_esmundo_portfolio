@@ -1,216 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Wilson Esmundo</title>
-  <link rel="stylesheet" href="src/styles.css" />
-
-  <!-- Link to Fontawesome icons -->
-  <script src="https://kit.fontawesome.com/ee536397e6.js" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<title>Wilson Esmundo</title>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./src/styles-splash.css">
 </head>
 
 <body>
-  <!-- This is the menu-bar -->
-  <div class="menu-wrap">
-    <input type="checkbox" class="toggler" />
-    <div class="hamburger-menu">
-      <div></div>
-    </div>
-    <div class="menu">
-      <div>
-        <div>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#intro-section">About</a></li>
-            <li><a href="#skills-section">Skill</a></li>
-            <li><a href="#project-section">Projects</a></li>
-            <li><a href="#contact-section">Contact</a></li>
-            <li><a href="#blog-section">Blog</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <header class="showcase">
-    <div class="container showcase-inner">
-      <h1 id="myname">I'm Wilson.</h1>
-      <h2>a full stack developer.</h2>
-      <a href="#intro-section" class="btn">Learn More</a>
-    </div>
-  </header>
+	<div class="expand">
+		<div class="stack"></div>
+		<div class="stack"></div>
+	</div>
+	<section>
+		<div class="splash-text">
+			<h2>Wilson Esmundo</h2><br>
+			<h3>Portfolio</h3>
 
-  <!-- End of menu bar -->
+			<a class="btn" href="./src/main.html">Read More</a>
+		</div>
 
-  <!-- This is the main area -->
+		<ul class="social-media">
+			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="#"><i class="fa fa-github"></i></a></li>
+		</ul>
+		<div class="component1"></div>
+		<div class="component2"></div>
+		<div class="component3"></div>
 
-  <main id="main">
-    <!-- This is the intro-section -->
-
-    <section id="intro-section" class="grid">
-      <div class="content-wrap">
-        <h2 class="content-title"></h2>
-        <div class="profile">
-          <div>
-            <img class="profile-pic" src="docs/prof.jpeg" alt="Profile" />
-          </div>
-        </div>
-        <div class="content-text">
-          <p>
-            "Hello, my name is Wilson. I'm currently studying Diploma in
-            Information Technology at Coder Academy. I have a diverse set of
-            skills ranging from design, HTML, CSS, Bootstrap and Javascript
-            all the way to object programming language such as Ruby. With
-            every line of code, I want to make the web a beautiful place.
-            Thank you."
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- This is Skills section -->
-
-    <h2 class="content-title">Skills</h2>
-    <section id="skills-section" class="grid">
-      <ul>
-        <li>
-          <div class="card">
-            <img src="docs/ruby.png" alt="Ruby" />
-            <div class="card-content">
-              <h3 class="card-title">RUBY</h3>
-              <p>
-                A dynamic, open source programming language with a focus on
-                simplicity and productivity. It has an elegant syntax that is
-                natural to read and easy to write.
-              </p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="card">
-            <img src="docs/html-5.png" alt="HTML" />
-            <div class="card-content">
-              <h3 class="card-title">HTML5</h3>
-              <p>
-                Hypertext Markup Language (HTML) is the standard markup
-                language for documents designed to be displayed in a web
-                browser.
-              </p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="card">
-            <img src="docs/css.png" alt="CSS" />
-            <div class="card-content">
-              <h3 class="card-title">CSS</h3>
-              <p>
-                Cascading Style Sheets (CSS) is a style sheet language used
-                for describing the presentation of a document written in a
-                markup language like HTML.
-              </p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <!-- This is the Project Section -->
-    <section id="project-section" class="grid">
-      <h1>Projects</h1>
-      <div class="content-wrap">
-        <h2 class="content-title">Ruby Terminal Application</h2>
-        <img class="terminal" src="./docs/terminal.png" alt="terminal" />
-        <p>
-          <a href="https://github.com/charliegucci/T1A2" target="_blank">Bird Database</a>
-          for Terminal Application using Ruby Language
-        </p>
-      </div>
-      <div class="content-wrap">
-        <h2 class="content-title">Portfolio Website</h2>
-        <img class="portfolio" src="./docs/website.png" alt="portfolio" />
-        <p>
-          <a href="https://charliegucci.github.io/wilson_esmundo_portfolio/" target="_blank">Portfolio</a>
-          website using HTML and CSS
-        </p>
-      </div>
-    </section>
-
-    <!-- This is the Contact section -->
-
-    <section id="contact-section" class="grid">
-      <div class="box">
-        <form class="contact-me">
-          <div class="contact">
-            <h2>Contact Me</h2>
-            <div class="txt">
-              <label>Full Name:</label>
-              <input type="text" name="" value="" placeholder="Enter Your Name" required=""></div>
-
-            <div class="txt">
-              <label>Email:</label>
-              <input type="email" name="" value="" placeholder="Enter Your Email" required=""></div>
-
-            <div class="txt">
-              <label>Phone:</label>
-              <input type="text" name="" value="" placeholder="Enter Your Number" required=""></div>
-
-            <div class="txt">
-              <label>Message:</label>
-              <textarea></textarea>
-            </div>
-            <button class="btn"> Send </button>
-
-          </div>
-        </form>
-      </div>
-
-      <!-- This is the Blog section -->
-
-      <div id="blog-section" class="box">
-        <div class="container">
-          <div class="card-wrapper">
-            <div class="card">
-              <img src="./docs/blog.jpg" alt="blog" class="card-img">
-              <img src="docs/prof.jpeg" alt="blog picture" class="profile-image">
-              <h3>Blog#1</h3>
-              <p class="blog-title">Blog Title</p>
-              <p class="about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, dignissimos repudiandae.
-                Minus, itaque. Vel natus itaque deleniti aliquam optio cum earum possimus necessitatibus officiis et,
-                dolorum esse fugiat assumenda accusamus!</p>
-              <a class="btn" href="#blog-section">Read More</a>
-
-            </div>
-            <div class="card">
-              <img src="./docs/blog.jpg" alt="blog" class="card-img">
-              <img src="docs/prof.jpeg" alt="blog picture" class="profile-image">
-              <h3>Blog#2</h3>
-              <p class="blog-title">Blog Title</p>
-              <p class="about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, dignissimos repudiandae.
-                Minus, itaque. Vel natus itaque deleniti aliquam optio cum earum possimus necessitatibus officiis et,
-                dolorum esse fugiat assumenda accusamus!</p>
-              <a class="btn" href="#blog-section">Read more</a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- This is the footer  -->
-  <footer id="main-footer">
-    <div class="social-icons"></div>
-    <a href="#"><i class="fab fa-facebook-square"></i></a>
-    <a href="#"><i class="fab fa-twitter-square"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-    <a href="#"><i class="fab fa-github-square"></i></a>
-    <a href="#"><i class="fas fa-envelope-square"></i></a>
-    </div>
-
-  </footer>
+	</section>
 </body>
 
 </html>
