@@ -192,9 +192,9 @@ p {
 }
 
 #project-section {
-  background: #fdfdfd;
-  color: #393e46;
-  padding: 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,6 +209,109 @@ p {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), to(#2196f3));
+  background: linear-gradient(#fff 50%, #2196f3);
+}
+
+.project-container {
+  max-width: 1000px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.project-container .project-card {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fdfdfd;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 10px;
+}
+
+.project-container:hover .project-card {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.project-container .project-card:hover {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.project-container .project-card:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fdfdfd;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.project-container .project-card:hover:before {
+  background: #000;
+  -webkit-transform: scaleY(1.15);
+          transform: scaleY(1.15);
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-container .project-card .project-content {
+  text-align: center;
+  z-index: 2;
+  padding: 10px 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.project-container .project-card:hover .project-content {
+  color: #fdfdfd;
+}
+
+.project-container .project-card .project-content h2 {
+  font-size: .9rem;
+}
+
+.project-container .project-card .project-content p {
+  font-size: .9rem;
+}
+
+.project-container .project-card .project-content a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 5px 10px;
+  background: #262626;
+  color: #fdfdfd;
+  text-decoration: none;
+}
+
+.project-container .project-card:hover .project-content a {
+  background: #2196f3;
 }
 
 .terminal,
@@ -219,6 +322,7 @@ p {
 #project-section h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5em;
+  padding-top: 0;
 }
 
 .contact-me {
