@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
 body {
     margin: 0;
     padding: 0;
@@ -5,9 +7,6 @@ body {
     font-family: $primary-font, sans-serif;
     background-size: cover;
     background-position: center;
-    background: linear-gradient(#fff 50%, #2196f3);
-    color: #fff;
-    font-size: 1.1em;
 }
 
 /* This is the menu bar */
@@ -74,15 +73,14 @@ header ul li ul li {
 
     color: #333;
     padding-bottom: 2em;
-    background: linear-gradient(#fff 50%, #2196f3);
+    background: #FDFDFD;
+    height: 100vh;
 }
 
 .profile {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 8rem 2rem;
-
-
 
 
 }
@@ -99,31 +97,16 @@ header ul li ul li {
     padding: 1em;
     font-family: $primary-font;
     font-style: italic;
-    font-size: 1rem;
-    line-height: 2.3;
-}
 
-#intro-section h1 {
-    padding-left: 3rem;
 }
 
 @media(max-width: 768px) {
     .profile {
         flex-direction: column;
-        padding-top: 2rem;
-    }
-
-    #intro-section h1 {
-        text-align: center;
-        padding: 1rem 0;
     }
 
     .profile-pic {
         width: 50%;
-    }
-
-    #intro-section .content-text p {
-        line-height: 1.5;
     }
 
     header ul {

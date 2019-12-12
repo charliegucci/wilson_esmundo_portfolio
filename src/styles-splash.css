@@ -229,6 +229,7 @@ section {
     border: 20px solid #000;
     animation: rotate 40s linear infinite, inside-fade 1s linear forwards;
     animation-delay: 7s;
+    z-index: 1;
 }
 
 .component2 {
