@@ -1,174 +1,58 @@
-// Menubar
-
-.menu-wrap {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
+/* This is the menu bar */
+header {
+    width: 100%;
+    background: #000;
 }
 
-.menu-wrap .toggler {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    opacity: 0;
-}
-
-.menu-wrap .hamburger-menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 50px;
-    height: 50px;
-    padding: 0.5rem;
-    background: $hamburger-primary-color;
+header ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
+    justify-content: flex-end;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
 }
 
-// Hamburger Menu Lines
-
-.menu-wrap .hamburger-menu>div {
+header ul li {
+    list-style: none;
     position: relative;
-    width: 100%;
-    height: 1px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease;
+    padding: 10px 0;
+    transition: 0.5s;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(255, 255, 255, .2);
 }
 
-.menu-wrap .hamburger-menu>div:before,
-.menu-wrap .hamburger-menu>div:after {
-    content: '';
+header ul li:hover {
+    background: #2196f3;
+}
+
+header ul li:last-child {
+    border-right: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+}
+
+header ul li ul {
     position: absolute;
-    z-index: 1;
-    top: -10px;
-    width: 100%;
-    height: 1px;
-    background: #fff;
+    top: 44px;
+    left: 0;
+    background: #000;
+    display: block;
+    width: 200px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
 }
 
-.menu-wrap .hamburger-menu>div:after {
-    top: 10px;
-}
-
-// Menu Animation
-
-.menu-wrap .toggler:checked+.hamburger-menu>div {
-    transform: rotate(135deg);
-}
-
-// Turns the Hamburger into X
-.menu-wrap .toggler:checked+.hamburger-menu>div:before,
-.menu-wrap .toggler:checked+.hamburger-menu>div:after {
-    top: 0;
-    transform: rotate(90deg);
-}
-
-// Rotates the X when checked on Hover state
-
-.menu-wrap .toggler:checked:hover+.hamburger-menu>div {
-    transform: rotate(225deg);
-}
-
-// Showing Menu when Hamburger click
-
-.menu-wrap .toggler:checked~.menu {
+header ul li:hover ul {
+    opacity: 1;
     visibility: visible;
 }
 
-.menu-wrap .toggler:checked~.menu>div {
-    transform: scale(1);
-    transition-duration: $hamburger-toggle-speed;
-}
-
-.menu-wrap .toggler:checked~.menu>div>div {
-    opacity: 1;
-    transition: opacity 0.4s ease;
-}
-
-.menu-wrap .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu-wrap .menu>div {
-    background: $hamburger-overlay-color;
-    border-radius: 50%;
-    width: 200vw;
-    height: 200vw;
-    display: flex;
-    flex: none;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0);
-    transition: all 0.4s ease;
-}
-
-.menu-wrap .menu>div>div {
-    text-align: center;
-    max-width: 90vw;
-    max-height: 100vh;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-.menu-wrap .menu>div>div>ul>li {
-    list-style: none;
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 1rem;
-    font-family: $secondary-font;
-
-}
-
-.menu-wrap .menu>div>div>ul>li>a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.4s ease;
-}
-
-// Menu ANimation
-
-@keyframes line-animation {
-    0% {
-        transform: translateX(0px);
-    }
-
-    50% {
-        transform: translateX(6px);
-    }
-
-    100% {
-        transform: translateX(0px);
-    }
-}
-
-.menu-wrap .toggler:not(:checked):hover+.hamburger-menu>div::before {
-    animation: line-animation 0.3s linear 0.1s;
-}
-
-.menu-wrap .toggler:not(:checked):hover+.hamburger-menu>div {
-    animation: line-animation 0.6s linear 0.06s;
-}
-
-.menu-wrap .toggler:not(:checked):hover+.hamburger-menu>div::after {
-    animation: line-animation 0.3s linear 0.3s;
+header ul li ul li {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
