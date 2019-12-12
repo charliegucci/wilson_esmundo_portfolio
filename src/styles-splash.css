@@ -33,7 +33,7 @@ body {
 }
 
 .expand .stack:nth-child(2) {
-    background: gray;
+    background: linear-gradient(#fff 50%, #2196f3);
     animation-delay: 1s;
     z-index: 1;
 }
