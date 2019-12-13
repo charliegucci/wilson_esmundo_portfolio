@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700");
 header {
   width: 100%;
-  background: #000;
+  background: #17252a;
 }
 
 header ul {
@@ -33,7 +33,7 @@ header ul li {
 }
 
 header ul li:hover {
-  background: #2196f3;
+  background: #2b7a78;
 }
 
 header ul li:last-child {
@@ -43,14 +43,14 @@ header ul li:last-child {
 header ul li a {
   text-decoration: none;
   padding: 0 20px;
-  color: #fff;
+  color: #feffff;
 }
 
 header ul li ul {
   position: absolute;
   top: 44px;
   left: 0;
-  background: #000;
+  background: #17252a;
   display: block;
   width: 200px;
   -webkit-transition: 0.5s;
@@ -124,10 +124,9 @@ p {
 }
 
 #intro-section {
-  color: #333;
+  color: #feffff;
   padding-bottom: 2em;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), to(#2196f3));
-  background: linear-gradient(#fff 50%, #2196f3);
+  background: #3aafa9;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,7 +189,8 @@ p {
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-size: .7rem;
-  font-weight: 900;
+  font-weight: bold;
+  color: #17225a;
 }
 
 @media (max-width: 768px) {
@@ -223,108 +223,113 @@ p {
   }
 }
 
-#skills-section {
-  padding: 2em 2em 6em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.center {
+  width: 50%;
+  position: relative;
+  padding: 20px;
+  background: #17252a;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
-#skills-section ul {
-  list-style: none;
+.center h1 {
   margin: 0;
   padding: 0;
+  color: #feffff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: .8rem;
 }
 
-#skills-section li {
-  margin: 1em;
-  color: #fdfdfd;
-  font-family: "Montserrat", sans-serif;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-  position: relative;
+.skills-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #060c21;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: rem 2rem;
+  margin-top: 1rem;
+  background: #3aafa9;
 }
 
-#skills-section li::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: #fff;
-  z-index: -1;
+.skills-section div:nth-child(2) {
+  margin: 2rem 0;
 }
 
-#skills-section li::after {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: #fff;
-  z-index: -2;
-  -webkit-filter: blur(40px);
-          filter: blur(40px);
+.skills-section div:nth-child(2) h1,
+.skills-section div:nth-child(3) h1 {
+  color: #feffff;
 }
 
-#skills-section li:nth-child(1):before,
-#skills-section li:nth-last-child(1):after {
-  background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+.skillBox {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 20px 0;
 }
 
-#skills-section li:nth-child(2):before,
-#skills-section li:nth-last-child(2):after {
-  background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
-}
-
-#skills-section li:nth-child(3):before,
-#skills-section li:nth-last-child(3):after {
-  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
-}
-
-.card-content {
-  padding: 1em;
-}
-
-#skills-section h2 {
+.skillBox p {
+  color: #feffff;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
   font-family: "Montserrat", sans-serif;
-  font-size: 2.5em;
+  font-size: .6rem;
 }
 
-.card h3 {
-  font-weight: bolder;
-  font-size: 1.5em;
+.skillBox p:nth-child(2) {
+  float: right;
+  position: relative;
+  top: -25px;
 }
 
-.content-title {
-  padding-top: 4rem;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
+.skill {
+  background: #262626;
+  padding: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #0fffb7;
+  border-radius: 2px;
 }
 
-#skills-section li:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+.skill_level {
+  background: #0fffb7;
+  width: 100%;
+  height: 3px;
+}
+
+@media (min-width: 768px) {
+  .skills-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .center {
+    margin: 8rem 2rem;
+    width: 20%;
+    padding: 1rem;
+    height: 365px;
+  }
 }
 
 #project-section {
@@ -564,7 +569,7 @@ body {
 
 #main-footer {
   padding: 2em;
-  background: #fdfdfd;
+  background: #def2f1;
   color: black;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -616,6 +621,6 @@ body {
 .fa-linkedin:hover,
 .fa-github-square:hover,
 .fa-envelope-square:hover {
-  color: #45e19f;
+  color: #3aafa9;
 }
 /*# sourceMappingURL=styles.css.map */

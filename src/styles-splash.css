@@ -33,7 +33,7 @@ body {
 }
 
 .expand .stack:nth-child(2) {
-    background: linear-gradient(0deg, #fff 50%, #2196f3);
+    background: #feffff;
     animation-delay: 1s;
     z-index: 1;
 }
@@ -52,7 +52,7 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#fff 50%, #2196f3);
+    background: #3aafa9;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -82,11 +82,13 @@ section {
 .splash-text h2 {
     font-size: 6em;
     animation-delay: 2s;
+    color: #feffff;
 }
 
 .splash-text h3 {
     font-size: 3em;
     animation-delay: 3s;
+    color: #17252a;
 }
 
 .splash-text h2:before,
@@ -151,8 +153,8 @@ section {
     display: inline-block;
     margin: 20px 0 0;
     padding: 10px 20px;
-    background: #000;
-    color: #fdfdfd;
+    background: #17252a;
+    color: #feffff;
     font-weight: 700;
     text-decoration: none;
     font-size: 1.2em;
@@ -215,7 +217,7 @@ section {
 
 .social-media li a {
     font-size: 1.2em;
-    color: #000;
+    color: #def2f1;
 }
 
 
@@ -226,7 +228,7 @@ section {
     right: 40%;
     width: 250px;
     height: 250px;
-    border: 20px solid #000;
+    border: 20px solid #17252a;
     animation: rotate 40s linear infinite, inside-fade 1s linear forwards;
     animation-delay: 7s;
     z-index: 1;
@@ -239,7 +241,7 @@ section {
     top: 40%;
     width: 50px;
     height: 50px;
-    border: 2px solid #000;
+    border: 2px solid #17252a;
     animation: rotate 30s linear infinite, inside-fade 1s linear forwards;
     animation-delay: 7s;
 }
@@ -251,7 +253,7 @@ section {
     bottom: 40%;
     width: 50px;
     height: 50px;
-    border: 10px solid #000;
+    border: 10px solid #17252a;
     animation: rotate 25s linear infinite, inside-fade 1s linear forwards;
     animation-delay: 7s;
 }
