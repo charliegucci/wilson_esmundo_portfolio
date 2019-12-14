@@ -1,9 +1,13 @@
 #main-footer {
-    padding: 2em;
-    background: #def2f1;
+
+    // padding: 2em;
+    background: #feffff;
     color: black;
     text-align: center;
     font-family: $primary-font;
+    padding: 2rem 0 1rem;
+    width: 100%;
+
 }
 
 #main-footer a {
@@ -15,7 +19,7 @@
 .social-icons {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .fa-facebook-square {

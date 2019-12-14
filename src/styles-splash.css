@@ -83,12 +83,14 @@ section {
     font-size: 6em;
     animation-delay: 2s;
     color: #feffff;
+    letter-spacing: 1.5px;
 }
 
 .splash-text h3 {
     font-size: 3em;
     animation-delay: 3s;
     color: #17252a;
+    letter-spacing: 1px;
 }
 
 .splash-text h2:before,
@@ -158,7 +160,7 @@ section {
     font-weight: 700;
     text-decoration: none;
     font-size: 1.2em;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     animation: bottom-fade 0.5s linear forwards;
     animation-delay: 5.5s;
     border-radius: 2rem;
