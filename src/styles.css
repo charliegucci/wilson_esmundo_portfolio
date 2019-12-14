@@ -574,6 +574,9 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #project-section {
+    margin: 0;
+  }
 }
 
 body {
