@@ -125,7 +125,7 @@ p {
 
 #intro-section {
   color: #feffff;
-  padding-bottom: 2em;
+  padding: 5rem 0;
   background: #3aafa9;
   height: 100vh;
   display: -webkit-box;
@@ -193,7 +193,7 @@ p {
   color: #17225a;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .profile {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -223,18 +223,19 @@ p {
   }
 }
 
-.center {
-  width: 50%;
+.skill-box-container {
+  width: 100%;
   position: relative;
-  padding: 20px;
+  padding: .9rem;
   background: #17252a;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
           box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  margin: 5rem 1.5rem;
 }
 
-.center h1 {
+.skill-box-container h1 {
   margin: 0;
   padding: 0;
   color: #feffff;
@@ -248,23 +249,44 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding: rem 2rem;
-  margin-top: 1rem;
+  margin-top: 6rem;
   background: #3aafa9;
 }
 
-.skills-section div:nth-child(2) {
-  margin: 2rem 0;
+.skills-section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+}
+
+.skills-section li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .skills-section div:nth-child(2) h1,
@@ -272,14 +294,14 @@ p {
   color: #feffff;
 }
 
-.skillBox {
+.skill-box {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
   margin: 20px 0;
 }
 
-.skillBox p {
+.skill-box p {
   color: #feffff;
   text-transform: uppercase;
   margin: 0 0 8px;
@@ -290,7 +312,7 @@ p {
   font-size: .6rem;
 }
 
-.skillBox p:nth-child(2) {
+.skill-box p:nth-child(2) {
   float: right;
   position: relative;
   top: -25px;
@@ -305,30 +327,43 @@ p {
   border-radius: 2px;
 }
 
-.skill_level {
+.skill-level {
   background: #0fffb7;
   width: 100%;
   height: 3px;
 }
 
-@media (min-width: 768px) {
-  .skills-section {
+@media (max-width: 700px) {
+  .skills-section ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style: none;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .center {
-    margin: 8rem 2rem;
-    width: 20%;
+  .skills-section li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .skill-box-container {
+    width: 100%;
     padding: 1rem;
-    height: 365px;
+    margin: 1rem 0;
+  }
+  .skills-section {
+    margin: 0;
   }
 }
 

@@ -1,12 +1,13 @@
 #intro-section {
 
     color: #feffff;
-    padding-bottom: 2em;
+    padding: 5rem 0;
     background: #3aafa9;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .content-wrap {
@@ -45,7 +46,7 @@
     color: #17225a;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 700px) {
     .profile {
         flex-direction: column;
         padding-top: 2rem;
