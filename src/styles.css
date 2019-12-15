@@ -61,6 +61,7 @@ header ul li ul {
 header ul li:hover ul {
   opacity: 1;
   visibility: visible;
+  z-index: 2;
 }
 
 header ul li ul li {
@@ -73,53 +74,11 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
-img {
-  display: block;
-  width: 35%;
-  height: auto;
-  margin: auto;
-  padding: 1.5em;
-}
-
-h1,
-h2,
-h3 {
+body {
   margin: 0;
-  padding: 1em 0;
-}
-
-p {
-  margin: 0;
-  padding: 1em 0;
-}
-
-.btn {
-  display: inline-block;
-  border-radius: 2rem;
-  color: #fdfdfd;
-  text-decoration: none;
-  padding: 1em 2em;
-  margin: 1rem 0;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-size: .6rem;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  background-color: #445ae3;
-}
-
-.btn:hover {
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
-  -webkit-box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #intro-section {
@@ -172,6 +131,8 @@ p {
           box-sizing: border-box;
   -webkit-box-shadow: 0 10px 25px rgba(250, 250, 250, 0.089);
           box-shadow: 0 10px 25px rgba(250, 250, 250, 0.089);
+  padding: 1.5em;
+  margin: auto;
 }
 
 .content-text {
@@ -211,6 +172,7 @@ p {
   }
   .profile-pic {
     width: 200px;
+    display: block;
   }
   #intro-section .content-text p {
     line-height: 1.5;
@@ -774,5 +736,150 @@ input[type="submit"] {
 .fa-github-square:hover,
 .fa-envelope-square:hover {
   color: #3aafa9;
+}
+
+.blog {
+  margin: 3rem 0 0 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #feffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+}
+
+.container .box {
+  position: relative;
+  padding: 70px 10px 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center;
+  background: #3aafa9;
+}
+
+.container .box:hover {
+  background: #feffff;
+}
+
+.container .box p {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: .7rem;
+  text-align: justify;
+}
+
+.container .box h4 {
+  margin: 20px 0 0;
+  padding: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: .9rem;
+  color: #66fcf1;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.container .box h4 span {
+  font-weight: 600;
+  font-size: 14px;
+  color: #272727;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .box:hover p,
+.container .box:hover h4,
+.container .box:hover h4 span {
+  color: #17252a;
+}
+
+.container .box .imgBox {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 120px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.container .box .imgBox .avatar {
+  width: 100%;
+}
+
+.container .box:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  background: url(../docs/quote.png);
+  background-size: cover;
+  opacity: 0.03;
+  pointer-events: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .box:hover:before {
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+  opacity: 1;
+}
+
+.container .box:after {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  width: 40px;
+  height: 40px;
+  background: url(../docs/quote.png);
+  background-size: cover;
+  opacity: 0.05;
+  pointer-events: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotate(180deg) translateY(0px);
+          transform: rotate(180deg) translateY(0px);
+  z-index: 1;
+}
+
+.container .box:hover:after {
+  -webkit-transform: rotate(180deg) translateY(-60px);
+          transform: rotate(180deg) translateY(-60px);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .container .box {
+    margin-top: 30px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -2,6 +2,7 @@
 header {
     width: 100%;
     background: #17252a;
+
 }
 
 header ul {
@@ -50,9 +51,12 @@ header ul li ul {
 header ul li:hover ul {
     opacity: 1;
     visibility: visible;
+    z-index: 2;
 }
 
 header ul li ul li {
     border-right: none;
     border-bottom: 1px solid rgba(255, 255, 255, .2);
+
+
 }
