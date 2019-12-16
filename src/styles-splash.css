@@ -28,7 +28,7 @@ body {
 }
 
 .expand .stack:nth-child(1) {
-    background: #000;
+    background: #17252a;
     z-index: 2;
 }
 
@@ -99,7 +99,7 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    background: #000;
+    background: #17252a;
     width: 100%;
     height: 100%;
     transform-origin: right;
@@ -152,21 +152,65 @@ section {
 /* This is the button */
 .splash-text a {
     opacity: 0;
-    display: inline-block;
-    margin: 20px 0 0;
-    padding: 10px 20px;
-    background: #17252a;
+    position: relative;
+    padding: 20px 20px 20px 30px;
     color: #feffff;
-    font-weight: 700;
+    font-size: 20px;
+    font-family: sans-serif;
     text-decoration: none;
-    font-size: 1.2em;
-    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    transition: 0.5s;
+    margin-left: 2rem;
     animation: bottom-fade 0.5s linear forwards;
     animation-delay: 5.5s;
-    border-radius: 2rem;
+
 }
 
+.splash-text a:hover {
+    background: #2b7a78;
 
+    box-shadow: -30px 30px 50px rgba(0, 0, 0, .4);
+}
+
+.splash-text a:before,
+.splash-text a:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #fff;
+    pointer-events: none;
+    transform-style: linear;
+    transition-property: width, opacity, transform, box-shadow;
+
+}
+
+.splash-text a:before {
+    top: 0;
+    left: 0;
+}
+
+.splash-text a:after {
+    top: 0;
+    right: 0;
+}
+
+.splash-text a:hover:before {
+    width: 100%;
+    opacity: 0.1;
+    transform: translate(2px, -2px);
+    box-shadow: +2px 2px 2px rgba(0, 0, 0, .1);
+
+}
+
+.splash-text a:hover:after {
+    width: 100%;
+    opacity: 0.1;
+    transform: translate(4px, -4px);
+    box-shadow: +2px 2px 2px rgba(0, 0, 0, .1);
+
+}
 
 @keyframes bottom-fade {
     0% {

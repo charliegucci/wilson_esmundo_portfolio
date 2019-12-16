@@ -30,7 +30,7 @@
 
     <!-- End of menu bar -->
     <!-- This is the Contact section -->
-    <form action="mailto:wilson@coderacademy.com" method="POST" enctype="text/plain">
+    <form id="myForm" action="mailto:wilson@coderacademy.com" method="POST" enctype="text/plain">
         <section class="contact-section">
             <div class="container-contact">
                 <div class="container-contact-row">
@@ -77,10 +77,17 @@
                 <div class="container-contact-row">
                     <div class="container-contact-col">
                         <input type="submit" value="Send">
-
                     </div>
                 </div>
-            </div>
+                <div class="container-contact-row">
+                    <div class="container-contact-col">
+                        <input type="button" onclick="myFunction()" value="Reset">
+                        <script>
+                            function myFunction() {
+                                document.getElementById("myForm").reset();
+                            }
+                        </script>
+                    </div>
         </section>
     </form>
 

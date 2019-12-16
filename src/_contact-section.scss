@@ -114,7 +114,18 @@
 
 input[type="submit"] {
   border: none;
-  padding: 9px 35px;
+  padding: 4px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #feffff;
+  color: #17252a;
+  font-size: .9rem;
+  border-radius: 2px;
+}
+
+input[type="button"] {
+  border: none;
+  padding: 6px 33px;
   cursor: pointer;
   outline: none;
   background: #feffff;
