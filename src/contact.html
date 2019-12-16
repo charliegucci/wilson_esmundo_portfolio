@@ -19,13 +19,10 @@
             <li><a href="./intro-section.html">About</a></li>
             <li><a href="./skills-section.html">Skills</a></li>
             <li><a href="./project-section.html">Projects</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./blog.html">Blog</a>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a>
                 <ul>
-                    <li><a href="#">Blog Post 1</a></li>
-                    <li><a href="#">Blog Post 2</a></li>
-                    <li><a href="#">Blog Post 3</a></li>
-                    <li><a href="#">Blog Post 4</a></li>
+                    <li><a href="../docs/mock_resume.pdf" target="_blank">Resume</a></li>
                 </ul>
             </li>
         </ul>
@@ -33,57 +30,59 @@
 
     <!-- End of menu bar -->
     <!-- This is the Contact section -->
-    <section class="contact-section">
-        <div class="container-contact">
-            <div class="container-contact-row">
-                <div class="container-contact-col">
-                    <div class="input-box">
-                        <input type="text" name="" required="required">
-                        <span class="text">First Name</span>
-                        <span class="line"></span>
+    <form action="mailto:wilson@coderacademy.com" method="POST" enctype="text/plain">
+        <section class="contact-section">
+            <div class="container-contact">
+                <div class="container-contact-row">
+                    <div class="container-contact-col">
+                        <div class="input-box">
+                            <input type="text" name="firstname" required="required">
+                            <span class="text">First Name</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="container-contact-col">
+                        <div class="input-box">
+                            <input type="text" name="lastname" required="required">
+                            <span class="text">Last Name</span>
+                            <span class="line"></span>
+                        </div>
                     </div>
                 </div>
-                <div class="container-contact-col">
-                    <div class="input-box">
-                        <input type="text" name="" required="required">
-                        <span class="text">Last Name</span>
-                        <span class="line"></span>
+                <div class="container-contact-row">
+                    <div class="container-contact-col">
+                        <div class="input-box">
+                            <input type="email" name="contactemail" required="required">
+                            <span class="text">Email</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="container-contact-col">
+                        <div class="input-box">
+                            <input type="number" name="" required="required">
+                            <span class="text">Mobile</span>
+                            <span class="line"></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="container-contact-row">
-                <div class="container-contact-col">
-                    <div class="input-box">
-                        <input type="text" name="" required="required">
-                        <span class="text">Email</span>
-                        <span class="line"></span>
+                <div class="container-contact-row">
+                    <div class="container-contact-col">
+                        <div class="input-box text-area">
+                            <textarea required="required"></textarea>
+                            <span class="text">Message</span>
+                            <span class="line"></span>
+                        </div>
                     </div>
                 </div>
-                <div class="container-contact-col">
-                    <div class="input-box">
-                        <input type="text" name="" required="required">
-                        <span class="text">Mobile</span>
-                        <span class="line"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="container-contact-row">
-                <div class="container-contact-col">
-                    <div class="input-box text-area">
-                        <textarea required="required"></textarea>
-                        <span class="text">Message</span>
-                        <span class="line"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="container-contact-row">
-                <div class="container-contact-col">
-                    <input type="submit" value="Send">
+                <div class="container-contact-row">
+                    <div class="container-contact-col">
+                        <input type="submit" value="Send">
 
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </form>
 
 </body>
 

@@ -1,15 +1,15 @@
-.blog {
-    margin: 3rem 0 0 0;
+.blog-section {
+    margin: 4rem 0 0 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #feffff;
+    background: #def2f1;
     font-family: $primary-font;
 }
 
-.container {
+.blog-section-container {
     width: 1200px;
     margin: 0 auto;
     display: grid;
@@ -17,9 +17,10 @@
     grid-gap: 20px;
     box-sizing: border-box;
     padding: 20px;
+    cursor: pointer;
 }
 
-.container .box {
+.blog-section-container .container-box {
     position: relative;
     padding: 70px 10px 40px;
     transition: 0.5s;
@@ -27,11 +28,11 @@
     background: #3aafa9;
 }
 
-.container .box:hover {
+.blog-section-container .container-box:hover {
     background: #feffff;
 }
 
-.container .box p {
+.blog-section-container .container-box p {
     margin: 0;
     padding: 0;
     transition: 0.5s;
@@ -39,7 +40,7 @@
     text-align: justify;
 }
 
-.container .box h4 {
+.blog-section-container .container-box h4 {
     margin: 20px 0 0;
     padding: 0;
     transition: 0.5s;
@@ -50,20 +51,20 @@
     text-transform: uppercase;
 }
 
-.container .box h4 span {
+.blog-section-container .container-box h4 span {
     font-weight: 600;
     font-size: 14px;
     color: #272727;
     transition: 0.5s;
 }
 
-.container .box:hover p,
-.container .box:hover h4,
-.container .box:hover h4 span {
+.blog-section-container .container-box:hover p,
+.blog-section-container .container-box:hover h4,
+.blog-section-container .container-box:hover h4 span {
     color: #17252a;
 }
 
-.container .box .imgBox {
+.blog-section-container .container-box .image-box {
     position: absolute;
     top: -60px;
     left: 50%;
@@ -74,11 +75,11 @@
     overflow: hidden;
 }
 
-.container .box .imgBox .avatar {
+.blog-section-container .container-box .image-box .avatar {
     width: 100%
 }
 
-.container .box:before {
+.blog-section-container .container-box:before {
     content: '';
     position: absolute;
     top: 20px;
@@ -92,12 +93,12 @@
     transition: 0.5s;
 }
 
-.container .box:hover:before {
+.blog-section-container .container-box:hover:before {
     transform: translateY(-60px);
     opacity: 1;
 }
 
-.container .box:after {
+.blog-section-container .container-box:after {
     content: '';
     position: absolute;
     bottom: 20px;
@@ -113,13 +114,13 @@
     z-index: 1;
 }
 
-.container .box:hover:after {
+.blog-section-container .container-box:hover:after {
     transform: rotate(180deg) translateY(-60px);
     opacity: 1;
 }
 
-@media (max-width: 768px) {
-    .container .box {
+@media (max-width: 700px) {
+    .blog-section-container .container-box {
         margin-top: 30px;
     }
 }
