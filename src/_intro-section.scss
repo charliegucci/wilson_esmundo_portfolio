@@ -31,7 +31,16 @@
     // box-shadow: 0 10px 25px rgba(250, 250, 250, 0.089);
     padding: 1.5em;
     margin: auto;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    ;
 }
+
+.profile-pic:hover {
+    transform: rotate(720deg) scale(2, 2);
+
+}
+
 
 
 .content-text {

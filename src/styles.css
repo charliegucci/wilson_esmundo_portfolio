@@ -130,6 +130,14 @@ body {
           box-sizing: border-box;
   padding: 1.5em;
   margin: auto;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+.profile-pic:hover {
+  -webkit-transform: rotate(720deg) scale(2, 2);
+          transform: rotate(720deg) scale(2, 2);
 }
 
 .content-text {
@@ -863,6 +871,13 @@ input[type="button"]:active {
 
 .blog-section-container .container-box .image-box .avatar {
   width: 100%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.blog-section-container .container-box .image-box .avatar:hover {
+  -webkit-transform: rotate(720deg) scale(1, 1);
+          transform: rotate(720deg) scale(1, 1);
 }
 
 .blog-section-container .container-box:before {
