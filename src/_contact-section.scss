@@ -134,6 +134,20 @@ input[type="button"] {
   border-radius: 2px;
 }
 
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background: #17252a;
+  color: #feffff;
+  transition: .6s ease-in-out;
+}
+
+input[type="submit"]:active,
+input[type="button"]:active {
+  transform: translateY(2px);
+  transition: transform .4s;
+}
+
+
 @media(max-width: 700px) {
   .contact-section {
     margin: 0 1rem;
