@@ -48,15 +48,6 @@ body {
     }
 }
 
-.join {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    padding-right: 2rem;
-    align-items: center;
-
-}
-
 section {
     position: absolute;
     width: 100%;
@@ -101,6 +92,7 @@ section {
     animation-delay: 3s;
     color: #17252a;
     letter-spacing: 1px;
+    margin-bottom: 2rem;
 }
 
 .splash-text h2:before,
@@ -163,7 +155,7 @@ section {
 .splash-text a {
     opacity: 0;
     position: relative;
-    padding: 20px 20px 20px 30px;
+    padding: 10px 10px 10px 20px;
     color: #feffff;
     font-size: 20px;
     font-family: sans-serif;
@@ -171,11 +163,10 @@ section {
     text-transform: uppercase;
     letter-spacing: 10px;
     transition: 0.5s;
-    margin-left: 2rem;
+
     animation: bottom-fade 0.5s linear forwards;
     animation-delay: 5.5s;
-    width: 220px;
-
+    /* width: 100px; */
 
 }
 
@@ -191,7 +182,7 @@ section {
     position: absolute;
     width: 2px;
     height: 100%;
-    background: #fff;
+    background: #feffff;
     pointer-events: none;
     transform-style: linear;
     transition-property: width, opacity, transform, box-shadow;
@@ -213,7 +204,6 @@ section {
     opacity: 0.1;
     transform: translate(2px, -2px);
     box-shadow: +2px 2px 2px rgba(0, 0, 0, .1);
-    z-index: 1;
 
 }
 
@@ -222,7 +212,6 @@ section {
     opacity: 0.1;
     transform: translate(4px, -4px);
     box-shadow: +2px 2px 2px rgba(0, 0, 0, .1);
-    z-index: 1;
 
 }
 
@@ -291,7 +280,7 @@ section {
     border: 20px solid #17252a;
     animation: rotate 40s linear infinite, inside-fade 1s linear forwards;
     animation-delay: 7s;
-    z-index: 0;
+    z-index: 1;
 }
 
 .component2 {
