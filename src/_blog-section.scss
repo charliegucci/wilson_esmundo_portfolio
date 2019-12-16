@@ -17,7 +17,11 @@
     grid-gap: 20px;
     box-sizing: border-box;
     padding: 20px;
-    cursor: pointer;
+
+}
+
+.blog-section-container a {
+    color: #17252a;
 }
 
 .blog-section-container .container-box {
@@ -58,9 +62,9 @@
     transition: 0.5s;
 }
 
-.blog-section-container .container-box:hover p,
-.blog-section-container .container-box:hover h4,
-.blog-section-container .container-box:hover h4 span {
+.blog-section-container .container-box:active p,
+.blog-section-container .container-box:active h4,
+.blog-section-container .container-box:active h4 span {
     color: #17252a;
 }
 
