@@ -91,6 +91,7 @@
 
 }
 
+// Animated quotation mark
 .blog-section-container .container-box:before {
     content: '';
     position: absolute;
@@ -130,6 +131,8 @@
     transform: rotate(180deg) translateY(-60px);
     opacity: 1;
 }
+
+// media query below 700px width
 
 @media (max-width: 700px) {
     .blog-section-container .container-box {

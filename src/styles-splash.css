@@ -1,327 +1,322 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap");
 
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    font-family: 'PT Sans Narrow', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "PT Sans Narrow", sans-serif;
 }
 
 .expand {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 3;
 }
 
+/* This covers the body of the page */
 .expand .stack {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-origin: top;
-    animation: expand 1s ease-in-out forwards;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: top;
+  animation: expand 1s ease-in-out forwards;
 }
 
+/* First cover with Black Background */
 .expand .stack:nth-child(1) {
-    background: #17252a;
-    z-index: 2;
+  background: #17252a;
+  z-index: 2;
 }
 
+/* Second cover with blue background */
 .expand .stack:nth-child(2) {
-    background: #feffff;
-    animation-delay: 1s;
-    z-index: 1;
+  background: #feffff;
+  animation-delay: 1s;
+  z-index: 1;
 }
 
 @keyframes expand {
-    0% {
-        transform: scaleY(1);
-    }
+  0% {
+    transform: scaleY(1);
+  }
 
-    100% {
-        transform: scaleY(0);
-    }
+  100% {
+    transform: scaleY(0);
+  }
 }
 
 section {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #3aafa9;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #3aafa9;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
+
+/* Position of H2 h3 a */
 
 .splash-text {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    max-width: 700px;
-
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  max-width: 700px;
 }
+
+/* Hides H2 and H3 and reverse by animation */
 
 .splash-text h2,
 .splash-text h3 {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    transform-origin: left;
-    text-transform: uppercase;
-    transform: scaleX(0);
-    animation: show-text-reverse 1s ease-in-out forwards;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  transform-origin: left;
+  text-transform: uppercase;
+  transform: scaleX(0);
+  animation: show-text-reverse 1s ease-in-out forwards;
 }
 
+/* H2 delay */
 .splash-text h2 {
-    font-size: 6em;
-    animation-delay: 2s;
-    color: #feffff;
-    letter-spacing: 1.5px;
+  font-size: 6em;
+  animation-delay: 2s;
+  color: #feffff;
+  letter-spacing: 1.5px;
 }
 
+/* h3 delay */
 .splash-text h3 {
-    font-size: 3em;
-    animation-delay: 3s;
-    color: #17252a;
-    letter-spacing: 1px;
-    margin-bottom: 4rem;
+  font-size: 3em;
+  animation-delay: 3s;
+  color: #17252a;
+  letter-spacing: 1px;
+  margin-bottom: 4rem;
 }
 
+/* black background that slides from left to right */
 .splash-text h2:before,
 .splash-text h3:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #17252a;
-    width: 100%;
-    height: 100%;
-    transform-origin: right;
-    animation: show-text 1s ease-in-out forwards;
-    animation-delay: 3s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #17252a;
+  width: 100%;
+  height: 100%;
+  transform-origin: right;
+  animation: show-text 1s ease-in-out forwards;
+  animation-delay: 3s;
 }
 
 .splash-text h3:before {
-    animation-delay: 4s;
+  animation-delay: 4s;
 }
 
+/* Animation keyframes */
 @keyframes show-text {
-    0% {
-        transform: scaleX(1);
-    }
+  0% {
+    transform: scaleX(1);
+  }
 
-    100% {
-        transform: scaleX(0);
-    }
+  100% {
+    transform: scaleX(0);
+  }
 }
 
 @keyframes show-text-reverse {
-    0% {
-        transform: scaleX(0);
-    }
+  0% {
+    transform: scaleX(0);
+  }
 
-    100% {
-        transform: scaleX(1);
-    }
-}
-
-.splash-text p {
-    opacity: 0;
-    font-weight: 400;
-    font-size: 1.2em;
-    animation: inside-fade 1s linear forwards;
-    animation-delay: 5s;
+  100% {
+    transform: scaleX(1);
+  }
 }
 
 @keyframes inside-fade {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* This is the button */
 .splash-text .btn {
-    opacity: 0;
-    position: relative;
-    padding: 10px 10px 10px 20px;
-    color: #feffff;
-    font-size: 20px;
-    font-family: sans-serif;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    transition: 0.5s;
-    z-index: 10;
-
-    animation: bottom-fade 0.5s linear forwards;
-    animation-delay: 5.5s;
-    /* width: 100px; */
-
+  opacity: 0;
+  position: relative;
+  padding: 10px 10px 10px 20px;
+  color: #feffff;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  transition: 0.5s;
+  z-index: 10;
+  animation: bottom-fade 0.5s linear forwards;
+  animation-delay: 5.5s;
 }
 
+/* Button hover effects */
 .splash-text .btn:hover {
-    background: #2b7a78;
-
-    box-shadow: -30px 30px 50px rgba(0, 0, 0, .4);
+  background: #2b7a78;
+  box-shadow: -30px 30px 50px rgba(0, 0, 0, 0.4);
 }
 
+/* white border next to button */
 .splash-text .btn:before,
 .splash-text .btn:after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 100%;
-    background: #feffff;
-    pointer-events: none;
-    transform-style: linear;
-    transition-property: width, opacity, transform, box-shadow;
-
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #feffff;
+  pointer-events: none;
+  transform-style: linear;
+  transition-property: width, opacity, transform, box-shadow;
 }
 
+/* transparency effect for button */
 .splash-text .btn:before {
-    top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
 }
 
 .splash-text .btn:after {
-    top: 0;
-    right: 0;
+  top: 0;
+  right: 0;
 }
 
+/* hides white border lines for btn */
 .splash-text .btn:hover:before {
-    width: 100%;
-    opacity: 0.1;
-    transform: translate(2px, -2px);
-    box-shadow: +2px 2px 2px rgba(0, 0, 0, .1);
-
+  width: 100%;
+  opacity: 0.1;
+  transform: translate(2px, -2px);
+  box-shadow: +2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
+/* hides white border lines for btn */
 .splash-text .btn:hover:after {
-    width: 100%;
-    opacity: 0.1;
-    transform: translate(4px, -4px);
-    box-shadow: +2px 2px 2px rgba(0, 0, 0, .1);
-
+  width: 100%;
+  opacity: 0.1;
+  transform: translate(4px, -4px);
+  box-shadow: +2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
+/* Animation for social icons */
 @keyframes bottom-fade {
-    0% {
-        transform: translateY(70px);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(70px);
+    opacity: 0;
+  }
 
-    100% {
-        transform: translateY(50px);
-        opacity: 1;
-    }
+  100% {
+    transform: translateY(50px);
+    opacity: 1;
+  }
 }
 
 .social-media {
-    position: absolute;
-    bottom: 35px;
-    right: 30px;
-    display: flex;
-    flex-direction: column;
+  position: absolute;
+  bottom: 35px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .social-media li {
-    opacity: 0;
-    list-style: none;
-    padding: 10px 0;
-    text-align: center;
-    animation: bottom-fade 0.5s linear forwards;
+  opacity: 0;
+  list-style: none;
+  padding: 10px 0;
+  text-align: center;
+  animation: bottom-fade 0.5s linear forwards;
 }
-
 
 .social-media li:nth-child(1) {
-    animation-delay: 5s;
+  animation-delay: 5s;
 }
-
 
 .social-media li:nth-child(2) {
-    animation-delay: 5.25s;
+  animation-delay: 5.25s;
 }
-
 
 .social-media li:nth-child(3) {
-    animation-delay: 5.5s;
+  animation-delay: 5.5s;
 }
-
 
 .social-media li:nth-child(4) {
-    animation-delay: 5.75s;
+  animation-delay: 5.75s;
 }
-
 
 .social-media li a {
-    font-size: 1.2em;
-    color: #def2f1;
+  font-size: 1.2em;
+  color: #def2f1;
 }
 
-
 .component1 {
-    opacity: 0;
-    position: absolute;
-    bottom: -150px;
-    right: 40%;
-    width: 250px;
-    height: 250px;
-    border: 20px solid #17252a;
-    animation: rotate 40s linear infinite, inside-fade 1s linear forwards;
-    animation-delay: 7s;
-    z-index: 1;
-
+  opacity: 0;
+  position: absolute;
+  bottom: -150px;
+  right: 40%;
+  width: 250px;
+  height: 250px;
+  border: 20px solid #17252a;
+  animation: rotate 40s linear infinite, inside-fade 1s linear forwards;
+  animation-delay: 7s;
+  z-index: 1;
 }
 
 .component2 {
-    opacity: 0;
-    position: absolute;
-    left: -10px;
-    top: 40%;
-    width: 50px;
-    height: 50px;
-    border: 2px solid #17252a;
-    animation: rotate 30s linear infinite, inside-fade 1s linear forwards;
-    animation-delay: 7s;
+  opacity: 0;
+  position: absolute;
+  left: -10px;
+  top: 40%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #17252a;
+  animation: rotate 30s linear infinite, inside-fade 1s linear forwards;
+  animation-delay: 7s;
 }
 
 .component3 {
-    opacity: 0;
-    position: absolute;
-    right: -10px;
-    bottom: 40%;
-    width: 50px;
-    height: 50px;
-    border: 10px solid #17252a;
-    animation: rotate 25s linear infinite, inside-fade 1s linear forwards;
-    animation-delay: 7s;
+  opacity: 0;
+  position: absolute;
+  right: -10px;
+  bottom: 40%;
+  width: 50px;
+  height: 50px;
+  border: 10px solid #17252a;
+  animation: rotate 25s linear infinite, inside-fade 1s linear forwards;
+  animation-delay: 7s;
 }
 
+/* animation for square blocks */
 @keyframes rotate {
-    0% {
-        transform: rotate(45deg);
-    }
+  0% {
+    transform: rotate(45deg);
+  }
 
-    100% {
-        transform: rotate(405deg);
-    }
+  100% {
+    transform: rotate(405deg);
+  }
 }
 
 .fa-facebook:hover,
 .fa-twitter:hover,
 .fa-linkedin:hover,
 .fa-github:hover {
-    color: #17252a;
+  color: #17252a;
 }

@@ -6,7 +6,6 @@
   justify-content: center;
   align-items: center;
   background: #3aafa9;
-
 }
 
 .container-contact {
@@ -112,6 +111,7 @@
   height: 100%;
 }
 
+// style for the buttons
 input[type="submit"] {
   border: none;
   padding: 4px 35px;
@@ -147,7 +147,7 @@ input[type="button"]:active {
   transition: transform .4s;
 }
 
-
+// media query if below 700px width
 @media(max-width: 700px) {
   .contact-section {
     margin: 0 1rem;
