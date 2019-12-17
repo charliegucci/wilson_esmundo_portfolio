@@ -82,10 +82,13 @@
 .blog-section-container .container-box .image-box .avatar {
     width: 100%;
     transition: all .5s ease-in-out;
+    opacity: 0;
 }
 
 .blog-section-container .container-box .image-box .avatar:hover {
     transform: rotate(720deg) scale(1, 1);
+    opacity: 1;
+
 }
 
 .blog-section-container .container-box:before {

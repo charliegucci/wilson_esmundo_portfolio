@@ -181,6 +181,7 @@ body {
   .profile-pic {
     width: 200px;
     display: block;
+    margin-bottom: 1rem;
   }
   #intro-section .content-text p {
     line-height: 1.5;
@@ -873,11 +874,13 @@ input[type="button"]:active {
   width: 100%;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  opacity: 0;
 }
 
 .blog-section-container .container-box .image-box .avatar:hover {
   -webkit-transform: rotate(720deg) scale(1, 1);
           transform: rotate(720deg) scale(1, 1);
+  opacity: 1;
 }
 
 .blog-section-container .container-box:before {
