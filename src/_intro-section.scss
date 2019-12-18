@@ -1,8 +1,8 @@
 #intro-section {
 
-    color: #feffff;
+    color: $primary-white-color;
     padding: 6rem 0;
-    background: #3aafa9;
+    background: $primary-background-color;
     margin: 6rem 0 0;
     display: flex;
     justify-content: center;
@@ -48,12 +48,12 @@
 .content-text p {
     text-align: justify;
     padding: 1em;
-    font-family: $primary-font;
+    font-family: $secondary-font;
     font-style: italic;
     font-size: .7rem;
-    font-weight: bold;
-    color: #17252a;
+    color: $primary-black-color;
     letter-spacing: 1px;
+    font-weight: lighter;
 }
 
 // Media Query once reached min 700px

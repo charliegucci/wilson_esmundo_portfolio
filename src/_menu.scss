@@ -1,7 +1,7 @@
 /* This is the menu bar */
 header {
     width: 100%;
-    background: #17252a;
+    background: $primary-black-color;
 
 }
 
@@ -23,7 +23,7 @@ header ul li {
 }
 
 header ul li:hover {
-    background: #2b7a78;
+    background: $menu-bg-color;
 }
 
 header ul li:last-child {
@@ -33,14 +33,14 @@ header ul li:last-child {
 header ul li a {
     text-decoration: none;
     padding: 0 20px;
-    color: #feffff;
+    color: $primary-white-color;
 }
 
 header ul li ul {
     position: absolute;
     top: 44px;
     left: 0;
-    background: #17252a;
+    background: $primary-black-color;
     display: block;
     width: 200px;
     transition: 0.5s;

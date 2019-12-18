@@ -4,7 +4,7 @@
     align-items: center;
     padding: rem 2rem;
     margin-top: 6rem;
-    background: #3aafa9;
+    background: $primary-background-color;
 }
 
 .skills-section ul {
@@ -26,7 +26,7 @@
     width: 100%;
     position: relative;
     padding: .9rem;
-    background: #17252a;
+    background: $primary-black-color;
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
     margin: 5rem 1.5rem;
@@ -43,7 +43,7 @@
 .skill-box-container h1 {
     margin: 0;
     padding: 0;
-    color: #feffff;
+    color: $primary-white-color;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-family: $primary-font;
@@ -61,13 +61,12 @@
 }
 
 .skill-box p {
-    color: #feffff;
+    color: $primary-white-color;
     text-transform: uppercase;
     margin: 0 0 8px;
     padding: 0;
-    font-weight: bold;
     letter-spacing: 1px;
-    font-family: $primary-font;
+    font-family: $secondary-font;
     font-size: .6rem;
 }
 
@@ -79,17 +78,17 @@
 }
 
 .skill {
-    background: #262626;
+    background: $primary-black-color;
     padding: 4px;
     box-sizing: border-box;
-    border: 1px solid #0fffb7;
+    border: 1px solid $skills-bg-color;
     border-radius: 2px;
     z-index: 10;
 }
 
 // Refer to inline css to adjust exact percentage
 .skill-level {
-    background: #0fffb7;
+    background: $skills-bg-color;
     width: 100%;
     height: 3px;
     animation: move_level 1.5s ease-in-out forwards;
@@ -104,23 +103,23 @@
 
 // Targets the specific skill for colors
 .skill-box-container .skill-box:nth-child(2) .skill .skill-level {
-    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+    background: $linear_color1;
 }
 
 .skill-box-container .skill-box:nth-child(3) .skill .skill-level {
-    background: linear-gradient(45deg, #3bc0ff, #33ff00);
+    background: $linear_color2;
 }
 
 .skill-box-container .skill-box:nth-child(4) .skill .skill-level {
-    background: linear-gradient(45deg, #ffee54, #ff00ca);
+    background: $linear_color3;
 }
 
 .skill-box-container .skill-box:nth-child(5) .skill .skill-level {
-    background: linear-gradient(45deg, #22ffde, #2196f3);
+    background: $linear_color4;
 }
 
 .skill-box-container .skill-box:nth-child(6) .skill .skill-level {
-    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+    background: $linear_color1;
 }
 
 

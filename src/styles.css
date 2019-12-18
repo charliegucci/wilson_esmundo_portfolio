@@ -168,12 +168,12 @@ body {
 .content-text p {
   text-align: justify;
   padding: 1em;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-style: italic;
   font-size: .7rem;
-  font-weight: bold;
   color: #17252a;
   letter-spacing: 1px;
+  font-weight: lighter;
 }
 
 @media (max-width: 700px) {
@@ -293,9 +293,8 @@ body {
   text-transform: uppercase;
   margin: 0 0 8px;
   padding: 0;
-  font-weight: bold;
   letter-spacing: 1px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: .6rem;
 }
 
@@ -306,7 +305,7 @@ body {
 }
 
 .skill {
-  background: #262626;
+  background: #17252a;
   padding: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -406,7 +405,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Montserrat", sans-serif;
   background: #3aafa9;
   margin: 6rem 0 0;
 }
@@ -511,8 +509,8 @@ body {
 .project-container .project-card .project-content p {
   font-size: .6rem;
   text-transform: uppercase;
-  font-weight: bolder;
   letter-spacing: 1px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .project-container .project-card .project-content a {
@@ -523,6 +521,7 @@ body {
   color: #17252a;
   text-decoration: none;
   font-size: .7rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .project-container .project-card:hover .project-content a {
@@ -561,6 +560,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: #3aafa9;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container-contact {
@@ -827,6 +827,7 @@ input[type="button"]:active {
   transition: 0.5s;
   font-size: .7rem;
   text-align: justify;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .blog-section-container .container-box h4 {
@@ -834,17 +835,16 @@ input[type="button"]:active {
   padding: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  font-size: .9rem;
-  color: #66fcf1;
+  font-size: .7rem;
+  color: #def2f1;
   font-weight: 700;
   line-height: 20px;
-  text-transform: uppercase;
 }
 
 .blog-section-container .container-box h4 span {
   font-weight: 600;
   font-size: 14px;
-  color: #272727;
+  color: #feffff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }

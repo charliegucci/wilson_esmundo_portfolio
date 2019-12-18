@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #def2f1;
+    background: $secondary-white-color;
     font-family: $primary-font;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .blog-section-container a {
-    color: #17252a;
+    color: $primary-black-color;
 }
 
 .blog-section-container .container-box {
@@ -29,11 +29,11 @@
     padding: 70px 10px 40px;
     transition: 0.5s;
     text-align: center;
-    background: #3aafa9;
+    background: $primary-background-color;
 }
 
 .blog-section-container .container-box:hover {
-    background: #feffff;
+    background: $primary-white-color;
 }
 
 .blog-section-container .container-box p {
@@ -42,30 +42,31 @@
     transition: 0.5s;
     font-size: .7rem;
     text-align: justify;
+    font-family: $secondary-font;
 }
 
 .blog-section-container .container-box h4 {
     margin: 20px 0 0;
     padding: 0;
     transition: 0.5s;
-    font-size: .9rem;
-    color: #66fcf1;
+    font-size: .7rem;
+    color: $secondary-white-color;
     font-weight: 700;
     line-height: 20px;
-    text-transform: uppercase;
+
 }
 
 .blog-section-container .container-box h4 span {
     font-weight: 600;
     font-size: 14px;
-    color: #272727;
+    color: $primary-white-color;
     transition: 0.5s;
 }
 
 .blog-section-container .container-box:active p,
 .blog-section-container .container-box:active h4,
 .blog-section-container .container-box:active h4 span {
-    color: #17252a;
+    color: $primary-black-color;
 }
 
 .blog-section-container .container-box .image-box {
