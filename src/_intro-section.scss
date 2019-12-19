@@ -1,5 +1,4 @@
 #intro-section {
-
     color: $primary-white-color;
     padding: 6rem 0;
     background: $primary-background-color;
@@ -29,14 +28,12 @@
     box-sizing: border-box;
     padding: 1.5em;
     margin: auto;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     cursor: pointer;
-    ;
 }
 
 .profile-pic:hover {
     transform: rotate(720deg) scale(2, 2);
-
 }
 
 .content-text {
@@ -48,20 +45,20 @@
 .content-text p {
     text-align: justify;
     padding: 1em;
-    font-family: $secondary-font;
+    font-family: $primary-font;
     font-style: italic;
-    font-size: .7rem;
+    font-size: 0.7rem;
     color: $primary-black-color;
     letter-spacing: 1px;
     font-weight: lighter;
 }
 
+
 // Media Query once reached min 700px
-@media(max-width: 700px) {
+@media (max-width: 700px) {
     #intro-section {
         padding: 1rem;
         margin: 0;
-
     }
 
     #intro-section h1 {
@@ -84,3 +81,5 @@
         line-height: 1.5;
     }
 }
+
+// animation

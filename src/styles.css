@@ -143,8 +143,8 @@ body {
           box-sizing: border-box;
   padding: 1.5em;
   margin: auto;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 
@@ -168,9 +168,9 @@ body {
 .content-text p {
   text-align: justify;
   padding: 1em;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: italic;
-  font-size: .7rem;
+  font-size: 0.7rem;
   color: #17252a;
   letter-spacing: 1px;
   font-weight: lighter;
