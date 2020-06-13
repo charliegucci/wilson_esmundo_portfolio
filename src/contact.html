@@ -1,115 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Contact/Blog</title>
     <!-- Link to CSS and Integrity -->
-    <link rel="stylesheet" href="./styles.css"
-        integrity="sha512-ywS4DPvttuhLJ3NqMpyX9UeZvoZAts/TeqvyDXq+QIkply8XImXvldAAFOahJD1ckGY3uZzB/n9w0RZUXrE64g==">
+    <link
+      rel="stylesheet"
+      href="./styles.css"
+      integrity="sha512-ywS4DPvttuhLJ3NqMpyX9UeZvoZAts/TeqvyDXq+QIkply8XImXvldAAFOahJD1ckGY3uZzB/n9w0RZUXrE64g=="
+    />
     <!-- FontAwesome Integrity -->
-    <script src="https://kit.fontawesome.com/ee536397e6.js"
-        integrity="sha512-P12k7aMVj9Dlcrjyw3juu/AZMZ9w5KS4Ysmf1yWz9J7F5gOcSKaK+F0CXNnRvxaNCCg8hXXXq8dw9dQl9UVh8A=="
-        crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/ee536397e6.js"
+      integrity="sha512-P12k7aMVj9Dlcrjyw3juu/AZMZ9w5KS4Ysmf1yWz9J7F5gOcSKaK+F0CXNnRvxaNCCg8hXXXq8dw9dQl9UVh8A=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- This is the menu-bar -->
     <header>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./intro-section.html">About</a></li>
-            <li><a href="./skills-section.html">Skills</a></li>
-            <li><a href="./project-section.html">Projects</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contact.html">Contact</a>
-                <ul>
-                    <li><a href="../docs/mock_resume.pdf" target="_blank">Resume</a></li>
-                </ul>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./intro-section.html">About</a></li>
+        <li><a href="./skills-section.html">Skills</a></li>
+        <li><a href="./project-section.html">Projects</a></li>
+        <!-- <li><a href="./blog.html">Blog</a></li> -->
+        <li>
+          <a href="./contact.html">Contact</a>
+          <ul>
+            <li>
+              <a href="../docs/Wilson_Esmundo_Resume.pdf" target="_blank"
+                >Resume</a
+              >
             </li>
-        </ul>
+          </ul>
+        </li>
+      </ul>
     </header>
     <!-- End of menu bar -->
     <!-- This is the Contact section -->
-    <form id="myForm" action="mailto:wilson@coderacademy.com" method="POST" enctype="text/plain">
-        <section class="contact-section">
-            <div class="container-contact">
-                <div class="container-contact-row">
-                    <div class="container-contact-col">
-                        <div class="input-box">
-                            <input type="text" name="firstname" required="required">
-                            <span class="text">First Name</span>
-                            <span class="line"></span>
-                        </div>
-                    </div>
-                    <div class="container-contact-col">
-                        <div class="input-box">
-                            <input type="text" name="lastname" required="required">
-                            <span class="text">Last Name</span>
-                            <span class="line"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-contact-row">
-                    <div class="container-contact-col">
-                        <div class="input-box">
-                            <input type="email" name="contactemail" required="required">
-                            <span class="text">Email</span>
-                            <span class="line"></span>
-                        </div>
-                    </div>
-                    <div class="container-contact-col">
-                        <div class="input-box">
-                            <input type="number" name="" required="required">
-                            <span class="text">Mobile</span>
-                            <span class="line"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-contact-row">
-                    <div class="container-contact-col">
-                        <div class="input-box text-area">
-                            <textarea required="required"></textarea>
-                            <span class="text">Message</span>
-                            <span class="line"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-contact-row">
-                    <div class="container-contact-col">
-                        <input type="submit" value="Send">
-                    </div>
-                </div>
-                <div class="container-contact-row">
-                    <div class="container-contact-col">
-                        <input type="button" onclick="myFunction()" value="Reset">
-                        <!-- Just a small script to clear the forms -->
-                        <script>
-                            function myFunction() {
-                                document.getElementById("myForm").reset();
-                            }
-                        </script>
-                    </div>
-                </div>
+    <form
+      id="myForm"
+      action="mailto:wilson@coderacademy.com"
+      method="POST"
+      enctype="text/plain"
+    >
+      <section class="contact-section">
+        <div class="container-contact">
+          <div class="container-contact-row">
+            <div class="container-contact-col">
+              <div class="input-box">
+                <input type="text" name="firstname" required="required" />
+                <span class="text">First Name</span>
+                <span class="line"></span>
+              </div>
             </div>
-        </section>
+            <div class="container-contact-col">
+              <div class="input-box">
+                <input type="text" name="lastname" required="required" />
+                <span class="text">Last Name</span>
+                <span class="line"></span>
+              </div>
+            </div>
+          </div>
+          <div class="container-contact-row">
+            <div class="container-contact-col">
+              <div class="input-box">
+                <input type="email" name="contactemail" required="required" />
+                <span class="text">Email</span>
+                <span class="line"></span>
+              </div>
+            </div>
+            <div class="container-contact-col">
+              <div class="input-box">
+                <input type="number" name="" required="required" />
+                <span class="text">Mobile</span>
+                <span class="line"></span>
+              </div>
+            </div>
+          </div>
+          <div class="container-contact-row">
+            <div class="container-contact-col">
+              <div class="input-box text-area">
+                <textarea required="required"></textarea>
+                <span class="text">Message</span>
+                <span class="line"></span>
+              </div>
+            </div>
+          </div>
+          <div class="container-contact-row">
+            <div class="container-contact-col">
+              <input type="submit" value="Send" />
+            </div>
+          </div>
+          <div class="container-contact-row">
+            <div class="container-contact-col">
+              <input type="button" onclick="myFunction()" value="Reset" />
+              <!-- Just a small script to clear the forms -->
+              <script>
+                function myFunction() {
+                  document.getElementById('myForm').reset();
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+      </section>
     </form>
-
-</body>
-<!-- This is the footer  -->
-<footer id="main-footer">
+  </body>
+  <!-- This is the footer  -->
+  <footer id="main-footer">
     <div class="social-icons">
-        <a href="https://www.facebook.com/wilson.esmundo" target="_blank"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://twitter.com/he1l0w0r1d" target="_blank"><i class="fab fa-twitter-square"></i></a>
-        <a href="https://www.linkedin.com/in/wilson-esmundo-7a3862198/" target="_blank"><i
-                class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/charliegucci" target="_blank"><i class="fab fa-github-square"></i></a>
-        <a href="mailto:wilson@coderacademy.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
+      <a href="https://www.facebook.com/wilson.esmundo" target="_blank"
+        ><i class="fab fa-facebook-square"></i
+      ></a>
+      <a href="https://twitter.com/he1l0w0r1d" target="_blank"
+        ><i class="fab fa-twitter-square"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/wilson-esmundo-7a3862198/"
+        target="_blank"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <a href="https://github.com/charliegucci" target="_blank"
+        ><i class="fab fa-github-square"></i
+      ></a>
+      <a href="mailto:wilson@coderacademy.com" target="_blank"
+        ><i class="fas fa-envelope-square"></i
+      ></a>
     </div>
     <h6>©wilson@coderacademy 2019</h6>
-</footer>
-
+  </footer>
 </html>
